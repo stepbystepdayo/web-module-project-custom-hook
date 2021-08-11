@@ -5,10 +5,12 @@ import axios from "axios";
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 
+import useLocalStorage from "./hooks/useLocalStorage";
 
 import "./styles.scss";
 
 const App = () => {
+  console.log(useLocalStorage())
   const [coinData, setCoinData] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
 
